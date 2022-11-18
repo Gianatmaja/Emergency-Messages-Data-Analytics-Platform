@@ -53,12 +53,14 @@ An example use case for the consumption zone would be to query the data in the d
     LEFT JOIN Cat_Dim 
     ON Msg_Fact.category_ID = Cat_Dim.category_ID;
     
-A sample Power BI dashboard using the data from the above query has also been created. It can be seen below.
+A sample Power BI dashboard using the data from the above query has also been created. The dashboard can be seen below.
 
 ![Dashboard](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Dashboard.png)
+
+From the dashboard, business users can oberve the trends in the number of messages submitted throughout the years. They can also observe the proportion of related and labeled messages, from a variety of languages. Furthermore, the number of low, medium, and high emergency messages are also shown. Finally, business users can also identify the leading cause of emergencies using the treemap located in the bottom right area of the dashboard.
 
 ### Future Development
 Some recommendations which could be taken in consideration, for future development, include:
 - Improving the Hardware: The hardware specifications, such as the number of clusters or the data refresh rate, could be increased. This might help to provide services to a larger amount of users and offer real-time predictions.
-- Machine Learning Model Retraining Pipeling: MLOps could be included as a part of the architecture, to provide model retraining and maintain the performance through time and data drifts.
+- Machine Learning Model Retraining Pipeline: MLOps could be included as a part of the architecture, to provide model retraining and maintain the performance through time and data drifts.
 - More Sophisticated Emergency Level Classification: Currently, the emergency level (low, medium, high) is only based on the number of classes/ categories a message is classified into (food, water, electricity, etc.) In the future, a more sophisticated method of determining this could be developed.
