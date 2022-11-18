@@ -40,5 +40,23 @@ Data in the data warehouse can then be queried into the consumption zone for fur
 
 From time to time, offline copies of the data in the staging layer can also be passed into the exploratory zone, where data science & machine learning activities are conducted. This is where new machine learning models are experimented and trained in.
 
+### Data Consumption
+As mentioned in the previous section, the data in the data warehouse will follow a star schema. In our case, there will be 1 fact table and 3 dimension tables. These 3 dimension tables will contain information about the date, language, and emergency category level, respectively. The data model can be viewed below.
 
+An example use case for the consumption zone would be to query the data in the data warehouse and pass it to be viewed in a Power BI dashboard. An example query would be:
+
+    .                          
+    SELECT Msg_Fact.*, Date_Dim.date, Lang_Dim.language, Cat_Dim.category 
+    FROM Msg_Fact LEFT JOIN Date_Dim 
+    ON Msg_Fact.date_ID = Date_Dim.date_ID 
+    LEFT JOIN Lang_Dim 
+    ON Msg_Fact.language_ID = Lang_Dim.language_ID 
+    LEFT JOIN Cat_Dim 
+    ON Msg_Fact.category_ID = Cat_Dim.category_ID;
+    
+A sample Power BI dashboard using the data from the above query has also been created. It can be seen below.
+
+![Dashboard](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/DashboardScreenshot.png)
+
+### Future Development
 
