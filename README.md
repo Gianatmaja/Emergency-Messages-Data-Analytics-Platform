@@ -6,7 +6,7 @@ Every now and then, disasters and emergencies could happen, and while people may
 The structure of this repository can be viewed below.
 
     .
-    ├── Notebooks/                                         # Contains Jupyter notebooks for exploration & experimentation
+    ├── notebooks/                                         # Contains Jupyter notebooks for exploration & experimentation
     │  ├── Data Augmentation.ipynb                         # Adding additional columns to better suit project use case
     │  ├── Data Cleaning.ipynb                             # Removing redundant data to better suit project use case
     │  ├── Exploratory Data Analysis with Spark.ipynb      # Exploring the data with PySpark
