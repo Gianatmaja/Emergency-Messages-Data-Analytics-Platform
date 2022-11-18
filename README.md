@@ -57,7 +57,7 @@ An example use case for the consumption zone would be to query the data in the d
     LEFT JOIN Cat_Dim 
     ON Msg_Fact.category_ID = Cat_Dim.category_ID;
     
-A sample Power BI dashboard using the data from the above query has also been created. The dashboard can be seen below.
+Using data from the above query, a sample Power BI dashboard has also been created. The dashboard can be seen below.
 
 ![Dashboard](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Dashboard.png)
 
