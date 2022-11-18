@@ -30,7 +30,7 @@ To better follow the process of submitting an emergency message, a mockup of the
 Once submitted. the message will be stored, processed and analysed using a pre-trained machine learning model, which will predict the request categories of the emergency message. Based on those predictions, the level of the emergency (low, medium, high) will also be determined. As more messages are submitted, the size of the data will grow and business users can then analyse and view insights through queries, reports, and dashboards.
 
 ### Solution Architecture
-The solution architecture of this project can be viewed below. The main tools that are used include Python, Spark, Airflow, and Amazon Web Services.
+The solution architecture for this project can be viewed below. The main tools that are used include Python, Spark, Airflow, and Amazon Web Services.
 
 ![Architecture](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Picture3.png)
 
