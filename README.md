@@ -56,7 +56,7 @@ An example use case for the consumption zone would be to query the data in the d
     
 A sample Power BI dashboard using the data from the above query has also been created. It can be seen below.
 
-![Dashboard](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/DashboardScreenshot.png)
+![Dashboard](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Dashboard.png)
 
 ### Future Development
 
