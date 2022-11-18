@@ -6,14 +6,15 @@ Every now and then, disasters and emergencies could happen, and while people may
 The structure of this repository can be viewed below.
 
     .
-    ├── models                            
+    ├── Notebooks                            
+    │  ├── Data Augmentation.ipynb
+    │  ├── Data Cleaning.ipynb
+    │  ├── Exploratory Data Analysis with Spark.ipynb
+    │  ├── ML Model Building.ipynb
+    │  ├── Prediction Illustration.ipynb
+    ├── dags                 
     │  ├── __init__.py
-    │  ├── ngram_nlm.py                           # language model algorithm
-    ├── readers                 
-    │  ├── _init_.py
-    │  ├── ngram_dataset.py                       # Load dataset
-    ├── _init_.py
-    ├── lm.py                                     # Performs the language modelling
+    │  ├── msg_classifier.py                      
     ├── images
     └── README.md
 
