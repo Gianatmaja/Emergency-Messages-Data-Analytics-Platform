@@ -21,6 +21,6 @@ The structure of this repository can be viewed below.
 ### Business Process
 The main process considered in this project is after an emergency message has been submitted. For future development, we propose a mobile app as the main entry point for these messages. Through the app, the use will be prompted to describe their emergencies and optinally select the categories of their emergencies (meds, food, water, etc.), before submitting the request. To better follow the process of submitting an emergency message, a mockup of the emergency message mobile app can be viewed and interacted with [here](https://rp.mockplus.com/run/mZjA1toNnZ/lcyvCAMMEB?cps=hide&rps=hide&nav=1&ha=0&la=0&fc=0&dt=iphoneX&out=0&rt=1).
 
-[Mockup](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Screenshot%202022-11-17%20at%209.35.33%20PM.png)
+![Mockup](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Screenshot%202022-11-17%20at%209.35.33%20PM.png)
 
 Once submitted
