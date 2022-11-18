@@ -64,7 +64,7 @@ Using data from the above query, a sample Power BI dashboard has also been creat
 From the dashboard, business users can oberve the trends in the number of messages submitted throughout the years. They can also observe the proportion of related and labeled messages, from a variety of languages. Furthermore, the number of low, medium, and high emergency messages are also shown. Finally, business users can also identify the leading cause of emergencies using the treemap located in the bottom right area of the dashboard.
 
 ### Future Development
-Some recommendations which could be taken in consideration, for future development, include:
+Some recommendations which could be taken into consideration during future development include:
 - Improving the Hardware: The hardware specifications, such as the number of clusters or the data refresh rate, could be increased. This might help to provide services to a larger amount of users and offer real-time predictions.
 - Machine Learning Model Retraining Pipeline: MLOps could be included as a part of the architecture, to provide model retraining and maintain the performance through time and data drifts.
 - More Sophisticated Emergency Level Classification: Currently, the emergency level (low, medium, high) is only based on the number of classes/ categories a message is classified into (food, water, electricity, etc.) In the future, a more sophisticated method of determining this could be developed.
