@@ -58,4 +58,7 @@ A sample Power BI dashboard using the data from the above query has also been cr
 ![Dashboard](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Dashboard.png)
 
 ### Future Development
-
+Some recommendations which could be taken in consideration, for future development, include:
+- Improving the Hardware: The hardware specifications, such as the number of clusters or the data refresh rate, could be increased. This might help to provide services to a larger amount of users and offer real-time predictions.
+- Machine Learning Model Retraining Pipeling: MLOps could be included as a part of the architecture, to provide model retraining and maintain the performance through time and data drifts.
+- More Sophisticated Emergency Level Classification: Currently, the emergency level (low, medium, high) is only based on the number of classes/ categories a message is classified into (food, water, electricity, etc.) In the future, a more sophisticated method of determining this could be developed.
