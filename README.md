@@ -25,7 +25,7 @@ The main process considered in this project is after an emergency message has be
 
 To better follow the process of submitting an emergency message, a mockup of the emergency message mobile app can be viewed and interacted with [here](https://rp.mockplus.com/run/mZjA1toNnZ/lcyvCAMMEB?cps=hide&rps=hide&nav=1&ha=0&la=0&fc=0&dt=iphoneX&out=0&rt=1).
 
-![Mockup](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Screenshot%202022-11-17%20at%209.35.33%20PM.png)
+![Mockup](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Screenshot_2022-11-17_at_9.35.33_PM-removebg.png)
 
 Once submitted. the message will be stored, processed and analysed using a pre-trained machine learning model, which will predict the request categories of the emergency message. Based on those predictions, the level of the emergency (low, medium, high) will also be determined. As more messages are submitted, the size of the data will grow and business users can then analyse and view insights through queries, reports, and dashboards.
 
