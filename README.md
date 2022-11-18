@@ -6,16 +6,16 @@ Every now and then, disasters and emergencies could happen, and while people may
 The structure of this repository can be viewed below.
 
     .
-    ├── Notebooks/                                                  # Contains Jupyter notebooks for exploration & experimentation
-    │  ├── Data Augmentation.ipynb                                  # Adding additional columns to better suit project use case
-    │  ├── Data Cleaning.ipynb                                      # Removing redundant data to better suit project use case
-    │  ├── Exploratory Data Analysis with Spark.ipynb               # Exploring the data with PySpark
-    │  ├── ML Model Building.ipynb                                  # Random forest model training for message categories prediction
-    │  ├── Prediction Illustration.ipynb                            # Illustrate prediction process
+    ├── Notebooks/                                          # Contains Jupyter notebooks for exploration & experimentation
+    │  ├── Data Augmentation.ipynb                          # Adding additional columns to better suit project use case
+    │  ├── Data Cleaning.ipynb                              # Removing redundant data to better suit project use case
+    │  ├── Exploratory Data Analysis with Spark.ipynb       # Exploring the data with PySpark
+    │  ├── ML Model Building.ipynb                          # Random forest model training for message categories prediction
+    │  ├── Prediction Illustration.ipynb                    # Illustrate prediction process
     ├── dags/
     │  ├── __init__.py
-    │  ├── msg_classifier.py                                        # Python script for Airflow DAG
-    ├── images/                                                     # Contains images used in README
+    │  ├── msg_classifier.py                                # Python script for Airflow DAG
+    ├── images/                                             # Contains images used in README
     └── README.md
 
 The data that is used in this project is the multilingual disaster response messages data. The data, along with its description, can be accessed [here](https://www.kaggle.com/datasets/landlord/multilingual-disaster-response-messages).
