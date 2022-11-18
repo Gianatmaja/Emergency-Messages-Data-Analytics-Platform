@@ -28,5 +28,9 @@ Once submitted. the message will be processed and analysed using a pre-trained m
 At the moment, the data used to train the machine learning model is the multilingual disaster response messages data. The data, along with its description, can be accessed [here](https://www.kaggle.com/datasets/landlord/multilingual-disaster-response-messages).
 
 ### Solution Architecture
+The solution architecture of this project can be viewed below. The main tools that are used include Python, Spark, Airflow, and Amazon Web Services.
+
+![Architecture](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Picture1.png)
+
 
 
