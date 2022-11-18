@@ -43,7 +43,7 @@ Data in the data warehouse can then be queried into the consumption zone for fur
 From time to time, offline copies of the data in the staging layer will also be passed into the exploratory zone, where data science and machine learning activities are conducted. This is where new machine learning models are experimented and trained in. Tools that can be used here include Python, Jupyter notebooks, Scikit-learn, Spark, as well as GitHub as the code repository.
 
 ### Data Consumption
-As mentioned in the previous section, the data in the data warehouse will follow a star schema. In our case, there will be one fact table and three dimension tables. These three dimension tables will contain information about the dates, languages, and emergency category levels, respectively. The star schema data model can be viewed below.
+As mentioned in the previous section, the data in the data warehouse will follow a star schema. In our case, there will be one fact table and three dimension tables. These three dimension tables will contain information about the dates, languages, and emergency category levels, respectively. The star schema data model for this project can be viewed below.
 
 ![Schema](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Picture2.png)
 
