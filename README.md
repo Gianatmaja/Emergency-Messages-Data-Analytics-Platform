@@ -34,7 +34,7 @@ The solution architecture for this project can be viewed below. The main tools t
 
 ![Architecture](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Picture3.png)
 
-Aligning with the business process, when an emergency message is submitted, it will first be stored in the staging layer in S3. This raw data will then be checked for data quality, then passed into the processing layer. The pre-trained machine learning model will take the data here as input, and the predictions, along with other analyses, will be stored alongside the input data in one table, in the refined layer. From there, data transformations will be applied to transform the data into a star schema model, which will then be stored in a Redshift data warehouse. The data pipelines used will be managed by Apache Airflow.
+Aligning with the business process, when an emergency message is submitted, it will first be stored in the staging layer in S3. This raw data will then be checked for data quality, then passed into the processing layer. The pre-trained machine learning model will take the data here as input, and the predictions, along with other analyses, will be stored alongside the input data in one table, in the refined layer. From there, data transformations will be applied to transform the data into a star schema model, which will then be stored in a Redshift data warehouse. The data pipelines used here will be managed by Apache Airflow.
 
 Insert Airflow DAGs screenshot here.
 
