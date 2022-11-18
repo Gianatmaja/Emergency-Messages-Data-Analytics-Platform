@@ -18,7 +18,7 @@ The structure of this repository can be viewed below.
     ├── images/                                            # Contains images used in README
     └── README.md
 
-The data that is used in this project is the multilingual disaster response messages data. The data, along with its description, can be accessed [here](https://www.kaggle.com/datasets/landlord/multilingual-disaster-response-messages).
+The data that is used in this project is the multilingual disaster response messages data. This dataset, along with its description, can be accessed [here](https://www.kaggle.com/datasets/landlord/multilingual-disaster-response-messages).
 
 ### Business Process
 The main process considered in this project is after an emergency message has been submitted. For future development, we propose a mobile app as the main entry point for these messages. Through the app, the use will be prompted to describe their emergencies and optinally select the request categories of their emergencies (meds, food, water, etc.), before submitting the request. The ID, date, and language, will be automatically added. If a user labels/ categorizes their message, then there will be a 1 or 0 value, indicating yes or no, in each of the target variables (related, aid_related, food, etc.).
