@@ -1,7 +1,7 @@
 # Emergency Messages Data & Analytics Platform
 
 ### Project Overview
-Every now and then, disasters and emergencies could happen, and while people may do their best to prepare for it, something unexpected can always arise, and  during this time, it is crucial to receive the necessary help quickly. The rise of internet and social media has made communication easy, but manual processing of emergencies and requests for help is still time-consuming, as understanding the situation and the needs of the person in distress may not be so straightforward. This project aims to solve this problem by building a proof-of-concept for an end-to-end pipeline that stores, analyses, and classifies emergency messages, using techniques from data engineering, data science, and machine learning.
+Every now and then, disasters and emergencies could happen, and while people may do their best to prepare for it, something unexpected can always arise, and  during this time, it is crucial to receive the necessary help quickly. The rise of internet and social media has made communication easy, but manual processing of emergencies and requests for help is still time-consuming, as understanding the situation and the needs of the person in distress may not be so straightforward. This project aims to solve this problem by building a PoC (Proof-of-Concept) for an end-to-end pipeline that stores, analyses, and classifies emergency messages, using techniques from data engineering, data science, and machine learning.
 
 The structure of this repository can be viewed below.
 
@@ -38,15 +38,15 @@ The solution architecture for this project can be viewed below. The main tools t
 
 ![Architecture](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Picture5.png)
 
-Aligning with the business process, when an emergency message is submitted, it will first be stored in the staging layer in S3. This raw data will then be checked for data quality, then passed into the processing layer. The pre-trained machine learning model will take the data here as input, and the predictions, along with other analyses, will be stored alongside the input data in one table, in the refined layer. From there, data transformations will be applied to transform the data into a star schema model, which will then be stored in a Redshift data warehouse.
+Aligning with the business process, when an emergency message is submitted, it will first be stored in the staging layer in S3. This raw data will then be checked for data quality, then passed into the processing layer. The pre-trained machine learning model will take the data here as input, and the predictions, along with other analyses, will be stored alongside the input data in one table, in the refined layer. From there, data transformations will be applied to transform the data into a star schema model, which will then be stored in a Redshift data warehouse. To get a better sense of how the data looks in each of these layers, several data samples have been uploaded in .csv format in the `data/` folder.
 
-To automate the data pipelines, Apache Airflow can be utilised. Below is a sample DAG which has been created for this project. The codes can be viewed in the `etl.py` and `Helpers.py` file, located inside the `dags` folder.
+To automate the data pipelines, Apache Airflow can be utilised. Below is a sample DAG which has been created for this project. The codes can be viewed in the `etl.py` and `Helpers.py` file, located inside the `dags/` folder.
 
 Insert Airflow DAGs screenshot here.
 
 Data in the data warehouse can then be queried into the consumption zone for further business analysis, or passed into BI tools, such as Power BI, to be viewed in a dashboard format.
 
-From time to time, offline copies of the data in the staging layer will also be passed into the exploratory zone, where data science and machine learning activities are conducted. This is where new machine learning models are experimented and trained in. Tools that can be used here include Python, Jupyter notebooks, Scikit-learn, Spark, as well as GitHub as the code repository. We demonstrate some of these use cases in the `Exploratory Data Analysis with Spark.ipynb` and `ML Model Building.ipynb`, which can be accessed in the `notebooks` folder.
+From time to time, offline copies of the data in the staging layer will also be passed into the exploratory zone, where data science and machine learning activities are conducted. This is where new machine learning models are experimented and trained in. Tools that can be used here include Python, Jupyter notebooks, Scikit-learn, Spark, as well as GitHub as the code repository. We demonstrate some of these use cases in the `Exploratory Data Analysis with Spark.ipynb` and `ML Model Building.ipynb`, which can be accessed in the `notebooks/` folder.
 
 ### Data Consumption
 As mentioned in the previous section, the data in the data warehouse will follow a star schema. In our case, there will be one fact table and three dimension tables. These three dimension tables will contain information about the dates, languages, and emergency category levels, respectively. The star schema data model for this project can be viewed below.
