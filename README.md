@@ -13,8 +13,12 @@ The structure of this repository can be viewed below.
     │  ├── ML Model Building.ipynb                         # Random forest model training for message categories prediction
     │  ├── Prediction Illustration.ipynb                   # Illustrate prediction process
     ├── dags/
-    │  ├── __init__.py
-    │  ├── msg_classifier.py                               # Python script for Airflow DAG
+    │  ├── etl.py                                          # Main Python script for Airflow DAG
+    │  ├── Helpers.py                                      # Python sript containing helper functions
+    ├── data/                                              # Contains sample data
+    │  ├── staging.csv                                     
+    │  ├── processing.csv
+    │  ├── refined.csv   
     ├── images/                                            # Contains images used in README
     └── README.md
 
