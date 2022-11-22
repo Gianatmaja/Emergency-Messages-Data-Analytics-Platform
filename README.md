@@ -51,8 +51,8 @@ To automate the data pipelines, Apache Airflow can be utilised. Below is a sampl
 In the DAG above, we can see 5 tasks, namely:
 - `Start_DAG`: Dummy task to mark the start of the process.
 - `Data_quality_check`: Task to check data quality (completeness and columns match) and move validated data from the staging to processing layer.
-- `ML_predictions`: Task to perform ML predictions on data from the processing layer, add emergency level, and move data to refined layer.
-- `Load_into_DWH`: Task to load data from refined layer into the Redshift data warehouse.
+- `ML_predictions`: Task to perform ML predictions on data from the processing layer, add emergency level, and move data to the refined layer.
+- `Load_into_DWH`: Task to load data from the refined layer into the Redshift data warehouse.
 - `End_DAG`: Dummy task to mark the end of the process. 
 
 Data in the data warehouse can then be queried into the consumption zone for further business analysis, or passed into BI tools, such as Power BI, to be viewed in a dashboard format.
