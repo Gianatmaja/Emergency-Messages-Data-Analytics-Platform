@@ -83,7 +83,7 @@ Using data from the above query, a sample Power BI dashboard has also been creat
 
 From the dashboard, business users can oberve the trends in the number of messages submitted throughout the years. They can also observe the proportion of related and labeled messages, from a variety of languages. Furthermore, the number of low, medium, and high emergency messages are also shown. Finally, business users can also identify the leading cause of emergencies using the treemap located in the bottom right area of the dashboard.
 
-### Future Development
+### Future Developments
 Some recommendations which could be taken into consideration during future development include:
 - Improving the Hardware: The hardware specifications such as the number of clusters, or the data refresh rate, could be optimised. This will help to provide services to a larger amount of users and offer near real-time predictions.
 - Machine Learning Model Retraining Pipeline: MLOps could be included as a part of the architecture, to support model retraining and to maintain the model performance through time and data drifts.
