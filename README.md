@@ -42,7 +42,7 @@ Aligning with the business process, when an emergency message is submitted, it w
 
 To automate the data pipelines, Apache Airflow can be utilised. Below is a sample DAG which has been created for this project. The codes can be viewed in the `etl.py` and `Helpers.py` file, located inside the `dags/` folder.
 
-Insert Airflow DAGs screenshot here.
+![dag](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/dag.png)
 
 Data in the data warehouse can then be queried into the consumption zone for further business analysis, or passed into BI tools, such as Power BI, to be viewed in a dashboard format.
 
