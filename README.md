@@ -24,6 +24,7 @@ The structure of this repository can be viewed below.
     │  ├── Lang_Dim.csv 
     │  ├── Cat_Dim.csv 
     ├── images/                                            # Contains images used in README
+    ├── MessagesDashboard.pbix                             # Power BI dashboard displayed in README
     └── README.md
 
 The data that is used in this project is the multilingual disaster response messages data. This dataset, along with its description, can be accessed [here](https://www.kaggle.com/datasets/landlord/multilingual-disaster-response-messages).
