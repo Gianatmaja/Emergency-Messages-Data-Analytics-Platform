@@ -1,7 +1,7 @@
 # Emergency Messages Data & Analytics Platform
 
 ### Project Overview
-Every now and then, disasters and emergencies could happen, and while people may do their best to prepare for it, something unexpected can always arise, and  during this time, it is crucial to receive the necessary help quickly. The rise of internet and social media has made communication easy, but manual processing of emergencies and requests for help is still time-consuming, as understanding the situation and the needs of the person in distress may not be so straightforward. This project aims to solve this problem by building a PoC (Proof-of-Concept) for an end-to-end pipeline that stores, analyses, and classifies emergency messages, using techniques from data engineering, data science, and machine learning.
+Every now and then, disasters and emergencies could happen, and while people may do their best to prepare for it, something unexpected can always arise, and  during this time, it is crucial to receive the necessary help quickly. The rise of internet and social media has made communication easy, but manual processing of emergencies and requests for help is still time-consuming, as understanding the situation and the needs of the person in distress may not be so straightforward. This project aims to solve this problem by building a PoC (Proof-of-Concept) for an end-to-end pipeline that stores, analyses, and classifies emergency messages, using techniques from data science, machine learning, and data engineering.
 
 The structure of this repository can be viewed below.
 
