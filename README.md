@@ -16,9 +16,13 @@ The structure of this repository can be viewed below.
     │  ├── etl.py                                          # Main Python script for Airflow DAG
     │  ├── Helpers.py                                      # Python sript containing helper functions
     ├── data/                                              # Contains sample data
-    │  ├── staging.csv                                     
-    │  ├── processing.csv
-    │  ├── refined.csv   
+    │  ├── Staging.csv                                     
+    │  ├── Processing.csv
+    │  ├── Refined.csv   
+    │  ├── Msg_Fact.csv                                     
+    │  ├── Date_Dim.csv
+    │  ├── Lang_Dim.csv 
+    │  ├── Cat_Dim.csv 
     ├── images/                                            # Contains images used in README
     └── README.md
 
@@ -40,13 +44,15 @@ The solution architecture for this project can be viewed below. The main tools t
 
 Aligning with the business process, when an emergency message is submitted, it will first be stored in the staging layer in S3. This raw data will then be checked for data quality, then passed into the processing layer. The pre-trained machine learning model will take the data here as input, and the predictions, along with other analyses, will be stored alongside the input data in one table, in the refined layer. From there, data transformations will be applied to transform the data into a star schema model, which will then be stored in a Redshift data warehouse. To get a better sense of how the data looks in each of these layers, several data samples have been uploaded in .csv format in the `data/` folder.
 
-To automate the data pipelines, Apache Airflow can be utilised. Below is a sample DAG which has been created for this project. The codes can be viewed in the `etl.py` and `Helpers.py` file, located inside the `dags/` folder.
+To automate the data pipelines, Apache Airflow can be utilised. Below is a sample DAG which has been created for this project. The codes can be viewed in the `etl.py` and `Helpers.py` file, located inside the `dags/` folder, which is normally under the `airflow` directory in an Airflow project structure.
 
 ![dag](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/dag.png)
 
 Data in the data warehouse can then be queried into the consumption zone for further business analysis, or passed into BI tools, such as Power BI, to be viewed in a dashboard format.
 
-From time to time, offline copies of the data in the staging layer will also be passed into the exploratory zone, where data science and machine learning activities are conducted. This is where new machine learning models are experimented and trained in. Tools that can be used here include Python, Jupyter notebooks, Scikit-learn, Spark, as well as GitHub as the code repository. We demonstrate some of these use cases in the `Exploratory Data Analysis with Spark.ipynb` and `ML Model Building.ipynb`, which can be accessed in the `notebooks/` folder.
+From time to time, offline copies of the data in the staging layer will also be passed into the exploratory zone, where data science and machine learning activities are conducted. This is where new machine learning models are experimented and trained in. Tools that can be used here include Python, Jupyter notebooks, Scikit-learn, Spark, as well as GitHub as the code repository. We demonstrate some of these use cases in the `Exploratory Data Analysis with Spark.ipynb` and `ML Model Building.ipynb`, which can be accessed in the `notebooks/` folder. 
+
+In the `Exploratory Data Analysis with Spark.ipynb` notebook, we used PySpark, Spark SQL, as well as Spark's UDFs to perform analyses on our data, whereas in the `ML Model Building.ipynb` notebook, we trained a multi-output random forest classifier to predict message categories, and in the end developed a pipeline to preprocess and predict future emergency messages. The pipeline is then exported using joblib for future usage.
 
 ### Data Consumption
 As mentioned in the previous section, the data in the data warehouse will follow a star schema. In our case, there will be one fact table and three dimension tables. These three dimension tables will contain information about the dates, languages, and emergency category levels, respectively. The star schema data model for this project can be viewed below.
