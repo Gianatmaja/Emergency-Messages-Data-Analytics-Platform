@@ -84,6 +84,6 @@ From the dashboard, business users can oberve the trends in the number of messag
 
 ### Future Development
 Some recommendations which could be taken into consideration during future development include:
-- Improving the Hardware: The hardware specifications such as the number of clusters, or the data refresh rate, could be optimised. This will help to provide services to a larger amount of users and offer real-time predictions.
+- Improving the Hardware: The hardware specifications such as the number of clusters, or the data refresh rate, could be optimised. This will help to provide services to a larger amount of users and offer near real-time predictions.
 - Machine Learning Model Retraining Pipeline: MLOps could be included as a part of the architecture, to support model retraining and to maintain the model performance through time and data drifts.
 - More Sophisticated Emergency Level Classification: Currently, the emergency level (low, medium, high) is only based on the number of classes/ categories a message is classified into (meds, food, water, etc.). In the future, a more sophisticated method of determining this could be developed.
