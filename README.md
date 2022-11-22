@@ -48,6 +48,13 @@ To automate the data pipelines, Apache Airflow can be utilised. Below is a sampl
 
 ![dag](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/dag.png)
 
+In the DAG above, we can see 5 tasks, namely:
+- `Start_DAG`: Dummy task to mark start of process.
+- `Data_quality_check`: Task to check data quality (completeness and columns match) and move validated data from the staging to processing layer.
+- `ML_predictions`: Task to perform ML predictions on data from the processing layer, add emergency level, and move data to refined layer.
+- `Load_into_DWH`: Task to load data from refined layer into the Redshift data warehouse.
+- `End_DAG`: Dummy task to mark end of process. 
+
 Data in the data warehouse can then be queried into the consumption zone for further business analysis, or passed into BI tools, such as Power BI, to be viewed in a dashboard format.
 
 From time to time, offline copies of the data in the staging layer will also be passed into the exploratory zone, where data science and machine learning activities are conducted. This is where new machine learning models are experimented and trained in. Tools that can be used here include Python, Jupyter notebooks, Scikit-learn, Spark, as well as GitHub as the code repository. We demonstrate some of these use cases in the `Exploratory Data Analysis with Spark.ipynb` and `ML Model Building.ipynb`, which can be accessed in the `notebooks/` folder. 
