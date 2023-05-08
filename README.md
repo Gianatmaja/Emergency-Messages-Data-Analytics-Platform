@@ -41,7 +41,7 @@ Once submitted, the message will be stored, processed, and analysed using a pre-
 ### Solution Architecture
 The solution architecture for this project can be viewed below. The main tools that are used include Python, Spark, Airflow, and Amazon Web Services.
 
-![Architecture](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Picture5.png)
+![Architecture](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/architecture.png)
 
 Aligning with the business process, when an emergency message is submitted, it will first be stored in the staging layer in S3. This raw data will then be checked for data quality, then passed into the processing layer. The pre-trained machine learning model will take the data here as input, and the predictions, along with other analyses, will be stored alongside the input data in one table, in the refined layer. From there, data transformations will be applied to transform the data into a star schema model, which will then be stored in a Redshift data warehouse. To get a better sense of how the data looks like in each of these layers, several data samples have been uploaded in .csv format in the `data/` folder.
 
@@ -65,7 +65,7 @@ In the `Exploratory Data Analysis with Spark.ipynb` notebook, we used PySpark, S
 ### Data Consumption
 As mentioned in the previous section, the data in the data warehouse will follow a star schema. In our case, there will be one fact table and three dimension tables. These three dimension tables will contain information about the dates, languages, and emergency category levels, respectively. The star schema data model for this project can be viewed below.
 
-![Schema](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/Picture6.png)
+![Schema](https://github.com/Gianatmaja/Emergency-Messages-Data-Analytics-Platform/blob/main/Images/data_model.png)
 
 An example use case for the consumption zone would be to query the data in the data warehouse and pass it to be viewed in a Power BI dashboard. An example query would be:
                       
